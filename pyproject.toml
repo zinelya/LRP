@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "LRP"
+version = "0.1.1"
+dependencies = []
+
+[project.scripts]
+split_confluant_labels = "LRP.cli.split_confluant_labels:main"
+labels_from_mask = "LRP.cli.labels_from_mask:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
